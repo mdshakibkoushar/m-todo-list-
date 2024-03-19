@@ -1,0 +1,107 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
+
+.App {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #007bff; /* Title color */
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+button {
+  padding: 0.8rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.todo-card {
+  background-color: #fff; /* ToDo card background color */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.todo-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #007bff; /* ToDo title color */
+}
+
+.todo-card p {
+  font-size: 1.2rem;
+  color: #333; /* ToDo description color */
+  margin-bottom: 1rem;
+}
+
+.todo-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.todo-checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff; /* Checkbox border color */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-checkbox input[type="checkbox"]:checked {
+  background-color: #007bff; /* Checked checkbox color */
+}
